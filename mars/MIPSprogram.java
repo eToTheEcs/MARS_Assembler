@@ -54,7 +54,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    
       private String filename;
       private ArrayList sourceList;
-      private ArrayList tokenList;
+      private ArrayList<TokenList> tokenList;
       private ArrayList parsedList;
       private ArrayList machineList;
       private BackStepper backStepper;
@@ -112,7 +112,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     * @see TokenList
     **/
     
-       public ArrayList getTokenList() {
+       public ArrayList<TokenList> getTokenList() {
          return tokenList;
       }
    
@@ -132,7 +132,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     * @see ProgramStatement
     **/
     
-       public ArrayList createParsedList() {
+       public ArrayList<ProgramStatement> createParsedList() {
          parsedList = new ArrayList();
          return parsedList;
       }
@@ -144,7 +144,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     * @see ProgramStatement
     **/
     
-       public ArrayList getParsedList() {
+       public ArrayList<ProgramStatement> getParsedList() {
          return parsedList;
       }
    
